@@ -7,6 +7,61 @@ body {
 }
 h1 {
     text-align: center;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* The side navigation menu */
+.sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+#main{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    overflow: auto;
+    margin-top: 800px;
+    margin-left: 180px;
+    transition: margin-left .5s;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about img {
+    height: 160px;
+    width: 140px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
 }
 #about h2{
     text-align: center;
@@ -14,27 +69,15 @@ h1 {
 #about p {
     margin-left: 100px;
     margin-right: 100px;
+    border-bottom: dotted;
+    border-spacing: 10px;
 }
-#sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  #sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 8%;
-    background-color: #f1f1f1;
-    height: 100%; /*Full height*/ 
-    position: fixed;  /*Make it stick, even on scroll */
-    overflow: auto;  /*Enable scrolling if the sidenav has too much content */
-  }
-  /* Make sure that padding behaves as expected */
+  
   #experiences {
       background-color: lightgray;
       padding-left: 100px;
       padding-right: 100px;
+      text-align: center;
   }
   #photography {
       padding-left: 100px;
