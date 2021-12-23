@@ -1,3 +1,52 @@
 body {
-    background: blue;
+    background: lightgray;
 }
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; Full height 
+    position: fixed;  Make it stick, even on scroll 
+    overflow: auto;  Enable scrolling if the sidenav has too much content 
+  }*/
+  /* Make sure that padding behaves as expected */
+.photo img{
+    width: auto;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+
+}
+.photo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
