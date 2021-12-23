@@ -1,22 +1,50 @@
 body {
-    background: lightgray;
+    background-image: lightgray;
+    background-image: url(https://i.imgur.com/afCsLA6.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 }
-/*ul {
+h1 {
+    text-align: center;
+}
+#about h2{
+    text-align: center;
+}
+#about p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  ul {
+  #sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 8%;
     background-color: #f1f1f1;
-    height: 100%; Full height 
-    position: fixed;  Make it stick, even on scroll 
-    overflow: auto;  Enable scrolling if the sidenav has too much content 
-  }*/
+    height: 100%; /*Full height*/ 
+    position: fixed;  /*Make it stick, even on scroll */
+    overflow: auto;  /*Enable scrolling if the sidenav has too much content */
+  }
   /* Make sure that padding behaves as expected */
+  #experiences {
+      background-color: lightgray;
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+  #photography {
+      padding-left: 100px;
+      padding-right: 100px;
+      text-align: center;
+      background-color: lightgray;
+  }
+.photo{
+    background-color: lightgray;
+}
 .photo img{
     width: auto;
     height: 100px;
@@ -31,13 +59,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
+#abilities {
+    margin-right: 100px;
+    margin-left: 100px;
+    text-align: center;
+    background-color: yellow;
+}
 * {box-sizing:border-box}
 
 /* Container for skill bars */
 .container {
   width: 100%; /* Full width */
   background-color: #ddd; /* Grey background */
+  
 }
 
 .skills {
@@ -50,3 +84,9 @@ body {
 .html {width: 90%; background-color: #04AA6D;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
 .js {width: 65%; background-color: #f44336;} /* Red */
+
+#contact {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
