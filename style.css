@@ -87,6 +87,22 @@ h1 {
       padding-left: 100px;
       padding-right: 100px;
       text-align: center;
+      padding: 20px;
+  }
+  #experiences h3 {
+      margin-bottom: 90px;
+  }
+  #experiences th {
+      border-bottom: 3px solid black;
+      background-color: black;
+      color: white;
+  }
+  #experiences tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  #experiences td {
+      padding: 20px;
+      border: 1px solid black;
   }
   #photography {
       padding-left: 100px;
