@@ -36,12 +36,12 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  /* When you mouse over the navigation links, change their color */
+ 
   .sidenav a:hover {
     color: #f1f1f1;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -125,7 +125,7 @@ h1 {
     border-bottom-style: ridge;
     border-bottom-color: #818181;
     border-bottom-width: 2px;
-    margin-top: 800px;
+    margin-top: 400px;
 }
 #photography h3 {
     margin-bottom: 90px;
@@ -135,15 +135,93 @@ h1 {
     margin: 0;
     padding: 0;
 }
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
   }
-  #photography::after {
-    content: "";
-    clear: both;
-    display: table;
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
   }
 #abilities {
     margin-right: 100px;
@@ -155,10 +233,10 @@ h1 {
 }
 * {box-sizing:border-box}
 
-/* Container for skill bars */
+
 .container {
   width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  background-color: #ddd; 
   border: 2px solid black;
 }
 
@@ -169,9 +247,9 @@ h1 {
   color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: black;} /* Green */
-.css {width: 80%; background-color: rgba(97, 97, 97, 0.247);} /* Blue */
-.js {width: 65%; background-color: darkgray;} /* Red */
+.html {width: 65%; background-color: black;}
+.css {width: 60%; background-color: rgba(97, 97, 97, 0.247);}
+.js {width: 50%; background-color: darkgray;}
 
 #contact {
     text-align: center;
